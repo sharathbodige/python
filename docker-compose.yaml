@@ -1,0 +1,8 @@
+services:
+  python-app:
+    build: ./python
+      #image: pyth:latest
+    restart: always
+    container_name: mypython
+    ports:
+      - "8000:5000"
